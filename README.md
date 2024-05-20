@@ -13,4 +13,4 @@
 
 ## Link para o projeto:
 
-https://portfolio-kappa-fawn-38.vercel.app/
+* https://portfolio-kappa-fawn-38.vercel.app/
