@@ -242,3 +242,15 @@ body{
         width: auto;
     }
 }
+
+
+@media (max-width: 500px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+}
