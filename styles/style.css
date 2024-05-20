@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@1&display=swap');
+
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #E6AF00;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--cor-secundaria)
+}
+
+
+body{
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: underline;
+}
+
+
+.apresentacao{
+    padding: 8.8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__link {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    font-weight: 600;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 16px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    transition: transform 0.3 ease;
+
+}
+
+.apresentacao__links__link:hover {
+    transform: scale(1.1);
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape__conteudo {
+    color: var(--cor-primaria);
+}
+
+
+
+
+
+
+/* Resume */
+
+
+.curriculo {
+    padding: 8.8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+
+
+
+.curriculo__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+.curriculo__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family:var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+
+.curriculo__conteudo__lista {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    list-style-type: none;
+}
+
+.curriculo__conteudo__lista li {
+    margin-bottom: 2%;
+}
+
+
+
+
+.curriculo__conteudo__paragrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+
+}
+
+
+
+.curriculo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.curriculo__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 1300px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+
+    .apresentacao {
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .curriculo {
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .curriculo__conteudo {
+        width: auto;
+    }
+}
